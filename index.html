@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#" style="color:rgb(228, 78, 78);font-family: cursive;"><span>LA</span> Fitness</a>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="membership.html">Membership</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="banner">
+          <div class="bannertext">
+              <h1>Not a member yet?</h1>
+              <h1><span>Join now for more details</span></h1>
+              <button id="btn"> Join Us <i class="fa fa-angle-right"></i></button>
+          </div>
+      </div>
+      <main class="homemain">
+          <div class="about">
+              <img src="rope.jpg" alt="rope">
+              <div class="aboutText">
+              <h2>YOUR FITNESS IS ESSENTIAL</h2>
+              <p>At LA Fitness, we believe your fitness is essential. Making your overall physical and mental wellness a priority will melt away stress, decrease anxiety, and increase your overall positive energy levels, and you’ll feel healthy and strong for the holidays and new year!</p>
+              <p>Just open the PF App or visit your local club’s page to access our Crowd
+Meter. It will show you how many members are there! It just one of the many
+ways we’re doing our part to ensure you can gym confidently!</p>
+              </div>
+          </div>
+
+          <!-- Gallery -->
+
+            
+       
+    
+        
+        <div class="gallery-conatiner">
+            <h1>Gallery</h1>
+        
+        <div class="sildes fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width:100%">
+          <div class="text"> Results </div>
+        </div>
+        
+        <div class="sildes fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width:100%">
+          <div class="text"> Main Area </div>
+        </div>
+        
+        <div class="sildes fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width:100%">
+          <div class="text"> Basement </div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+        
+        <h1>Our Location</h1>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0255026652057!2d-73.9900801845956!3d40.69543597933369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4a6c47643b%3A0x284552dca0b97d69!2sNew%20York%20City%20College%20of%20Technology!5e0!3m2!1sen!2sus!4v1607582512884!5m2!1sen!2sus" width="1225" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        
+        
+      </main>
+      <footer>
+          <p> &copy;copyright 2020 LA Fintess</p>
+      </footer>
+
+
+
+    
+      
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("sildes");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    
+</body>
+</html>

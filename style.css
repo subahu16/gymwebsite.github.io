@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	background : #FFF url(background2.jpg);
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #111;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a:hover {
+    color: rgb(228, 78, 78);
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .topnav span{
+      color: ;
+      font-family: cursive;
+  }
+  /* styling the banner */
+
+  .banner{
+      background-image: url('parallax.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
+      position: relative;
+  }
+  .banner .bannertext {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      color: #ffff;
+      text-transform: uppercase;
+  }
+  .bannertext span{
+      color: rgb(228, 78, 78);
+  }
+#btn{
+    border:none;
+    padding: 10px;
+    color: #fffff;
+    background-color: rgb(228, 78, 78);
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#btn:hover{
+    border: 2px solid rgb(228, 78, 78);
+    color: rgb(228, 78, 78);
+    background-color: #fff;
+}
+.homemain{
+    margin: 20px;
+    
+}
+.homemain h1{
+    color: rgb(228,78,78);
+    text-align: center;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about img{
+    width: 50%;
+}
+.aboutText{
+    flex: 40%;
+    margin: 0 10px;
+	color: white;
+}
+
+
+/* style for slide show */
+.sildes {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.gallery-conatiner {
+  max-width: 1000px;
+  position: relative;
+  margin:20px auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+footer{
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* styling the #service */
+#service{
+    text-align: center;
+    background-image: url(background3.jpg);
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    
+    
+
+}
+#service h1{
+    color: rgb(228, 78, 78);
+    padding: 20px;
+    
+}
+#service table,th,td{
+    border-collapse: collapse;
+    border: 2px solid rgb(228, 78, 78);
+    padding: 10px;
+}
+#service table{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4);
+}

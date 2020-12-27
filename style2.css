@@ -1,0 +1,100 @@
+body {
+    font-size: 16px;
+    background: #f9f9f9;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background : #FFF url(background.jpg);
+}
+  .topnav {
+    overflow: hidden;
+    background-color: #111;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a:hover {
+    color: rgb(228, 78, 78);
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+form {
+    width: 300px;
+    background: #7788;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #0165b6;
+}
